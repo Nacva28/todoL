@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To DO LIST</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="front">
+      <nav class="toDo-Top">
+        <h2>Make a Todo list</h2>
+      </nav>
+      <div class="inputs">
+        <input
+          id="todo-input"
+          class="text-Input"
+          type="text"
+          placeholder="Buy A Milk"
+        />
+        <button id="save-btn" class="btn-style">Submit ToDo</button>
+      </div>
+      <div class="list-container">
+        <div class="page-3">
+          <button style="width: 153px; height: 30px; color: blue">
+            All Of Them
+          </button>
+          <button style="width: 170px; height: 30px; color: red">
+            Deleted
+          </button>
+          <button style="width: 170px; height: 30px; color: green">
+            Confirmed
+          </button>
+        </div>
+        <div class="container">
+          <ol id="list-todo" type="1" class="inside-ul"></ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
