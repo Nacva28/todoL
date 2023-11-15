@@ -81,3 +81,12 @@
   border-radius: 30px;
   margin-top: 3px;
 }
+
+.btn-delete-page {
+  width: 170px;
+  height: 30px;
+  color: rgb(255, 12, 12);
+}
+.active-filter {
+  background-color: blue;
+}

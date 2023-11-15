@@ -1,10 +1,13 @@
 const todoInput = document.getElementById("todo-input");
 const savebtn = document.getElementById("save-btn");
 let todolist = document.getElementById("list-todo");
+const allFilterBtn = document.getElementById("all");
+const completedFilter = document.getElementById("completed");
+const deletedFilter = document.getElementById("deleted");
 
 const allTodos = [];
 const deletedTodos = [];
-
+let activeTab = "all";
 const saveTodoHandler = (e) => {
   const inputValue = todoInput.value;
   if (inputValue.trim() === "") {
@@ -48,3 +51,14 @@ const saveTodoHandler = (e) => {
   todoInput.value = "";
 };
 savebtn.addEventListener("click", saveTodoHandler);
+
+const tabSwitchHandler = (activeTab, targetelement, inactiveElement1) => {
+  targetelement.classList.add("active-filter");
+};
+
+deletedFilter.addEventListener;
+"click",
+  () => {
+    activeTab = "deleted";
+    deletedFilter.classList.add("delete");
+  };
