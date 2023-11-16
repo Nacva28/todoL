@@ -81,12 +81,25 @@
   border-radius: 30px;
   margin-top: 3px;
 }
+#all {
+  background-color: rgb(226, 225, 231);
+  color: blue;
+  width: 153px;
+  height: 30px;
+}
 
-.btn-delete-page {
+#completed {
+  width: 170px;
+  height: 30px;
+  color: rgba(20, 205, 3, 0.689);
+}
+
+#deleted {
   width: 170px;
   height: 30px;
   color: rgb(255, 12, 12);
 }
-.active-filter {
-  background-color: blue;
+.completed-item {
+  background-color: green;
+  color: white;
 }
